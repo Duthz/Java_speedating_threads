@@ -5,17 +5,20 @@
  */
 package speedating;
 
+import java.io.*;
+import java.net.*;
+
 /**
  *
- * @author pierregaillard
+ * @author Shinthu
  */
 public class Client {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException {
+            Socket soc = new Socket("localhost", 6464);
+            Thread t;
+            t = new Thread(new ThreadClient(soc));
+            t.start();
     }
-    
+
 }
