@@ -10,10 +10,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-/**
- *
- * @author pierregaillard
- */
 public class Xfer extends Thread {
     InputStream fromleft;
     OutputStream toright;

@@ -5,10 +5,7 @@
  */
 package speedating;
 
-/**
- *
- * @author pierregaillard
- */
+
 public class MsgServer {
     
 }
