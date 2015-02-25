@@ -14,18 +14,4 @@ import java.util.logging.Logger;
  */
 public class ServerThread {
 
-    public void run() {
-        System.out.println("Starting Thread");
-        try {
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-            while ((bytesRead = fromleft.read(buffer)) != -1) {
-                toright.write(buffer, 0, bytesRead);
-                //System.out.println(bytesRead);
-            }
-
-        } catch (Exception ex) {
-            System.err.println(ex);
-        }
-    }
 }
